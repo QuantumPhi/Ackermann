@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int ack(int i, int j)
+long long ack(long long i, long long j)
 {
-    int ans;
+    long long ans;
     if(i == 0) ans = j + 1;
-    else if(j == 0) ans = ack(i - 1, j);
+    else if(j == 0) ans = ack(i - 1, 1);
     else ans = ack(i - 1, ack(i, j - 1));
     return ans;
 }
 
 void main(int argc, char** argv)
 {
-    printf("%d", ack(2, 2));
+    if(argc == 3) printf("%lld", ack(atoll(argv[1]), atoll(argv[2])));
 }
