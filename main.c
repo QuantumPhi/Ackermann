@@ -2,6 +2,7 @@
 
 long long ack(long long i, long long j)
 {
+    printf("%lld, %lld\n", i, j);
     long long ans;
     if(i == 0) ans = j + 1;
     else if(j == 0) ans = ack(i - 1, 1);

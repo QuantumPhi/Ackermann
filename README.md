@@ -1,3 +1,5 @@
 Ackermann
 =========
-Ackermann function (which I should really have done earlier).
+Ackermann function.
+
+Licensed under the [MIT License](LICENSE).
